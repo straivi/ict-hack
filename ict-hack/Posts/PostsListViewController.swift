@@ -14,10 +14,13 @@ class PostsListViewController: UIViewController {
     private let sectionInsets = UIEdgeInsets(top: 40, left: 20, bottom: 40, right: 20)
     private let itemsPerRow: CGFloat = 1
     
+    private var proposalsList = [Proposal]()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         setupView()
         setupLayout()
+        getProposalsList()
     }
     
     required init?(coder: NSCoder) {
@@ -47,6 +50,24 @@ class PostsListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
+    
+    private func getProposalsList() {
+        let networkService = NetworkService()
+        networkService.getProposalList { (result) in
+            switch result {
+            case .success(let newProposals):
+                self.proposalsList = newProposals
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+                
+            default:
+                break
+            }
+            
+        }
+    }
+    
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
@@ -71,12 +92,12 @@ extension PostsListViewController: UICollectionViewDelegateFlowLayout {
 // MARK: UICollectionViewDataSource
 extension PostsListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        proposalsList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PostCollectionCell.self), for: indexPath) as? PostCollectionCell else { return PostCollectionCell() }
-        
+        cell.configureCell(model: proposalsList[indexPath.item])
         return cell
     }
 }

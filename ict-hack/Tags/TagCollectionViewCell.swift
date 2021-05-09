@@ -27,10 +27,10 @@ class TagCollectionCell: MDCChipCollectionViewCell {
         chipView.cornerRadius = 8
     }
     
-    func configureCell(item: Int) {
-        let tag = tagsList[item]
+    func configureCell(item: Int, tags: [String]) {
+        let tag = tags[item]
         chipView.titleLabel.text = tag
-        chipView.setBackgroundColor(UIColor.chipView.colorList[item], for: .normal)
+        chipView.setBackgroundColor(UIColor.chipView.colorList[item % 4], for: .normal)
         chipView.sizeToFit()
     }
 }

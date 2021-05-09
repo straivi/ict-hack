@@ -18,12 +18,12 @@
 		BA55A1642646AEF900681DF5 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1632646AEF900681DF5 /* EventCollectionViewCell.swift */; };
 		BA55A16B2646BA1100681DF5 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */; };
 		BA55A1702646BA5900681DF5 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */; };
-		BA55A1732646BB0B00681DF5 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1722646BB0B00681DF5 /* PostModel.swift */; };
 		BA55A1762646BD7C00681DF5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1752646BD7C00681DF5 /* AppColor.swift */; };
 		BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */; };
 		BA55A1822646E5B900681DF5 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */; };
 		BA55A1852647E48F00681DF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1842647E48F00681DF5 /* ProfileViewController.swift */; };
 		BA55A18A2647F09300681DF5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */; };
+		BA55A18F2648038500681DF5 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A18E2648038500681DF5 /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,12 @@
 		BA55A1632646AEF900681DF5 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
 		BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
-		BA55A1722646BB0B00681DF5 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		BA55A1752646BD7C00681DF5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA55A1842647E48F00681DF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		BA55A18E2648038500681DF5 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,7 @@
 				BA55A12A2645BA9D00681DF5 /* SceneDelegate.swift */,
 				BA55A1602646ADE800681DF5 /* AppImage.swift */,
 				BA55A1752646BD7C00681DF5 /* AppColor.swift */,
+				BA55A18D2648036000681DF5 /* Services */,
 				BA55A1872647E49400681DF5 /* Profile */,
 				BA55A1802646E57900681DF5 /* Tags */,
 				BA55A1692646B9FF00681DF5 /* Posts */,
@@ -130,7 +131,6 @@
 			children = (
 				BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */,
 				BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */,
-				BA55A1722646BB0B00681DF5 /* PostModel.swift */,
 				BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */,
 			);
 			path = Posts;
@@ -151,6 +151,14 @@
 				BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		BA55A18D2648036000681DF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA55A18E2648038500681DF5 /* NetworkRequest.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E71C872C04B71BD9CC91A4AF /* Frameworks */ = {
@@ -276,8 +284,8 @@
 			files = (
 				BA55A16B2646BA1100681DF5 /* PostsListViewController.swift in Sources */,
 				BA55A1762646BD7C00681DF5 /* AppColor.swift in Sources */,
-				BA55A1732646BB0B00681DF5 /* PostModel.swift in Sources */,
 				BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */,
+				BA55A18F2648038500681DF5 /* NetworkRequest.swift in Sources */,
 				BA55A18A2647F09300681DF5 /* ProfileHeaderView.swift in Sources */,
 				BA55A15E2646ADC800681DF5 /* EventListViewController.swift in Sources */,
 				BA55A1642646AEF900681DF5 /* EventCollectionViewCell.swift in Sources */,

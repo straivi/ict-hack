@@ -17,6 +17,8 @@ class PostCollectionCell: UICollectionViewCell {
     private let flowLayout = UICollectionViewFlowLayout()
     private let tagsCollectionView: UICollectionView
     
+    private var tagsList = [String]()
+    
     override init(frame: CGRect) {
         tagsCollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         super.init(frame: frame)
@@ -78,7 +80,7 @@ class PostCollectionCell: UICollectionViewCell {
             tagsCollectionView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 25),
             tagsCollectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             tagsCollectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            tagsCollectionView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10),
+            tagsCollectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             tagsCollectionView.heightAnchor.constraint(equalToConstant: 22)
         ]
         constraints += tagsCollectionConstraints
@@ -92,19 +94,19 @@ class PostCollectionCell: UICollectionViewCell {
         
         //Title
         titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-        titleLabel.text = "Ищу дизайнера"
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 1
+        titleLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         
         //Author
         authorLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
-        authorLabel.text = "Case Club, ИТМО"
         authorLabel.textAlignment = .left
         authorLabel.numberOfLines = 1
+        authorLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
         //Description
         descriptionLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
-        descriptionLabel.text = "Нужен какой то там дизайнер для чего-то там чтобы делать что то там там дизайнер для чего-то там чтобы делать что то Нужен какой то там дизайнер для чего-то"
+        descriptionLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
         descriptionLabel.textAlignment = .left
         descriptionLabel.numberOfLines = 5
         descriptionLabel.textColor = UIColor.label.secondaryText
@@ -114,7 +116,7 @@ class PostCollectionCell: UICollectionViewCell {
         experienceLabel.textAlignment = .right
         experienceLabel.numberOfLines = 1
         experienceLabel.textColor = UIColor.label.accentText
-        experienceLabel.text = "+5 R"
+        experienceLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         
         //Shadow
         layer.shadowColor = UIColor.black.withAlphaComponent(0.18).cgColor
@@ -135,8 +137,14 @@ class PostCollectionCell: UICollectionViewCell {
         flowLayout.scrollDirection = .horizontal
     }
     
-    private func configureCell(model: PostModel) {
+    func configureCell(model: Proposal) {
+        titleLabel.text = model.name
+        authorLabel.text = model.author
+        descriptionLabel.text = model.description
+        experienceLabel.text = "+\(model.value) R"
+        tagsList = model.tags
         
+        tagsCollectionView.reloadData()
     }
 }
 
@@ -144,7 +152,7 @@ class PostCollectionCell: UICollectionViewCell {
 extension PostCollectionCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: TagCollectionCell.self), for: indexPath) as? TagCollectionCell else { return .zero }
-        cell.configureCell(item: indexPath.item)
+        cell.configureCell(item: indexPath.item, tags: tagsList)
         return CGSize(width: cell.chipView.intrinsicContentSize.width, height: 22)
     }
     
@@ -162,7 +170,7 @@ extension PostCollectionCell: UICollectionViewDelegateFlowLayout {
 // MARK: UICollectionViewDataSource
 extension PostCollectionCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        tagsList.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
@@ -170,7 +178,7 @@ extension PostCollectionCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: TagCollectionCell.self), for: indexPath) as? TagCollectionCell else { return TagCollectionCell() }
-        cell.configureCell(item: indexPath.item)
+        cell.configureCell(item: indexPath.item, tags: tagsList)
         return cell
     }
     
