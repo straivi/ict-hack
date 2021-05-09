@@ -23,6 +23,7 @@
 		BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */; };
 		BA55A1822646E5B900681DF5 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */; };
 		BA55A1852647E48F00681DF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1842647E48F00681DF5 /* ProfileViewController.swift */; };
+		BA55A18A2647F09300681DF5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA55A1842647E48F00681DF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BA55A1842647E48F00681DF5 /* ProfileViewController.swift */,
+				BA55A1892647F09300681DF5 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				BA55A1762646BD7C00681DF5 /* AppColor.swift in Sources */,
 				BA55A1732646BB0B00681DF5 /* PostModel.swift in Sources */,
 				BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */,
+				BA55A18A2647F09300681DF5 /* ProfileHeaderView.swift in Sources */,
 				BA55A15E2646ADC800681DF5 /* EventListViewController.swift in Sources */,
 				BA55A1642646AEF900681DF5 /* EventCollectionViewCell.swift in Sources */,
 				BA55A1292645BA9D00681DF5 /* AppDelegate.swift in Sources */,

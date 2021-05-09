@@ -15,10 +15,14 @@ class MainTabBarController: UITabBarController {
     private func setupVC() {
         viewControllers = [
             createNavController(for: EventListViewController(), title: "События", image: UIImage(systemName: "bolt.horizontal")),
-            createNavController(for: PostsListViewController(), title: "Посты", image: UIImage(systemName: "newspaper"))
+            createNavController(for: PostsListViewController(), title: "Посты", image: UIImage(systemName: "newspaper")),
+            createNavController(for: ProfileViewController(), title: "Профиль", image: UIImage(systemName: "person"))
         ]
         
         tabBar.barTintColor = .white
+        if let vc = viewControllers?[1] {
+            selectedViewController = vc
+        }
     }
     
     private func createNavController(for rootViewController: UIViewController,
