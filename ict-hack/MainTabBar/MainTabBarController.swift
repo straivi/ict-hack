@@ -14,8 +14,11 @@ class MainTabBarController: UITabBarController {
     
     private func setupVC() {
         viewControllers = [
-            createNavController(for: EventListViewController(), title: "Events", image: UIImage(systemName: "bolt.horizontal"))
+            createNavController(for: EventListViewController(), title: "События", image: UIImage(systemName: "bolt.horizontal")),
+            createNavController(for: PostsListViewController(), title: "Посты", image: UIImage(systemName: "newspaper"))
         ]
+        
+        tabBar.barTintColor = .white
     }
     
     private func createNavController(for rootViewController: UIViewController,

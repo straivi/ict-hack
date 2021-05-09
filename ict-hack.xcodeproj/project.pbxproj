@@ -3,26 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0A322BEC27EC9E0BFFD1C7 /* Pods_ict_hack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F14BEC24A6813FB74792E /* Pods_ict_hack.framework */; };
 		BA55A1292645BA9D00681DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1282645BA9D00681DF5 /* AppDelegate.swift */; };
 		BA55A12B2645BA9D00681DF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A12A2645BA9D00681DF5 /* SceneDelegate.swift */; };
-		BA55A12D2645BA9D00681DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A12C2645BA9D00681DF5 /* ViewController.swift */; };
 		BA55A1322645BA9F00681DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA55A1312645BA9F00681DF5 /* Assets.xcassets */; };
 		BA55A1352645BA9F00681DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA55A1332645BA9F00681DF5 /* LaunchScreen.storyboard */; };
 		BA55A1592646AC2700681DF5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1582646AC2700681DF5 /* MainTabBarController.swift */; };
 		BA55A15E2646ADC800681DF5 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A15D2646ADC800681DF5 /* EventListViewController.swift */; };
 		BA55A1612646ADE800681DF5 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1602646ADE800681DF5 /* AppImage.swift */; };
 		BA55A1642646AEF900681DF5 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1632646AEF900681DF5 /* EventCollectionViewCell.swift */; };
+		BA55A16B2646BA1100681DF5 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */; };
+		BA55A1702646BA5900681DF5 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */; };
+		BA55A1732646BB0B00681DF5 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1722646BB0B00681DF5 /* PostModel.swift */; };
+		BA55A1762646BD7C00681DF5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1752646BD7C00681DF5 /* AppColor.swift */; };
+		BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */; };
+		BA55A1822646E5B900681DF5 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */; };
+		BA55A1852647E48F00681DF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55A1842647E48F00681DF5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A34F46006CE6D4CA2523E86 /* Pods-ict-hack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack.release.xcconfig"; path = "Target Support Files/Pods-ict-hack/Pods-ict-hack.release.xcconfig"; sourceTree = "<group>"; };
+		7E8F14BEC24A6813FB74792E /* Pods_ict_hack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ict_hack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9082B92916F8B7D99670561D /* Pods-ict-hack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ict-hack.debug.xcconfig"; path = "Target Support Files/Pods-ict-hack/Pods-ict-hack.debug.xcconfig"; sourceTree = "<group>"; };
 		BA55A1252645BA9D00681DF5 /* ict-hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ict-hack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55A1282645BA9D00681DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA55A12A2645BA9D00681DF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA55A12C2645BA9D00681DF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA55A1312645BA9F00681DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA55A1342645BA9F00681DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA55A1362645BA9F00681DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +39,13 @@
 		BA55A15D2646ADC800681DF5 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		BA55A1602646ADE800681DF5 /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		BA55A1632646AEF900681DF5 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
+		BA55A1722646BB0B00681DF5 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		BA55A1752646BD7C00681DF5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA55A1842647E48F00681DF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0A322BEC27EC9E0BFFD1C7 /* Pods_ict_hack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA39CEF82E861159BDD5DE5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9082B92916F8B7D99670561D /* Pods-ict-hack.debug.xcconfig */,
+				3A34F46006CE6D4CA2523E86 /* Pods-ict-hack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA55A11C2645BA9D00681DF5 = {
 			isa = PBXGroup;
 			children = (
 				BA55A1272645BA9D00681DF5 /* ict-hack */,
 				BA55A1262645BA9D00681DF5 /* Products */,
+				AA39CEF82E861159BDD5DE5A /* Pods */,
+				E71C872C04B71BD9CC91A4AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +93,10 @@
 				BA55A1282645BA9D00681DF5 /* AppDelegate.swift */,
 				BA55A12A2645BA9D00681DF5 /* SceneDelegate.swift */,
 				BA55A1602646ADE800681DF5 /* AppImage.swift */,
-				BA55A12C2645BA9D00681DF5 /* ViewController.swift */,
+				BA55A1752646BD7C00681DF5 /* AppColor.swift */,
+				BA55A1872647E49400681DF5 /* Profile */,
+				BA55A1802646E57900681DF5 /* Tags */,
+				BA55A1692646B9FF00681DF5 /* Posts */,
 				BA55A15C2646ADAC00681DF5 /* Events */,
 				BA55A1572646AC1500681DF5 /* MainTabBar */,
 				BA55A1312645BA9F00681DF5 /* Assets.xcassets */,
@@ -92,6 +123,41 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
+		BA55A1692646B9FF00681DF5 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				BA55A16A2646BA1100681DF5 /* PostsListViewController.swift */,
+				BA55A16F2646BA5900681DF5 /* PostCollectionCell.swift */,
+				BA55A1722646BB0B00681DF5 /* PostModel.swift */,
+				BA55A1782646C4BD00681DF5 /* PostDetailViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		BA55A1802646E57900681DF5 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				BA55A1812646E5B900681DF5 /* TagCollectionViewCell.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		BA55A1872647E49400681DF5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BA55A1842647E48F00681DF5 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E71C872C04B71BD9CC91A4AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F14BEC24A6813FB74792E /* Pods_ict_hack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA55A1392645BA9F00681DF5 /* Build configuration list for PBXNativeTarget "ict-hack" */;
 			buildPhases = (
+				7B3FDB3DE594F5E705D57798 /* [CP] Check Pods Manifest.lock */,
 				BA55A1212645BA9D00681DF5 /* Sources */,
 				BA55A1222645BA9D00681DF5 /* Frameworks */,
 				BA55A1232645BA9D00681DF5 /* Resources */,
+				78CCC27F08493CCE7DCB443F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,16 +224,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78CCC27F08493CCE7DCB443F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ict-hack/Pods-ict-hack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ict-hack/Pods-ict-hack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ict-hack/Pods-ict-hack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3FDB3DE594F5E705D57798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ict-hack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA55A1212645BA9D00681DF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA55A16B2646BA1100681DF5 /* PostsListViewController.swift in Sources */,
+				BA55A1762646BD7C00681DF5 /* AppColor.swift in Sources */,
+				BA55A1732646BB0B00681DF5 /* PostModel.swift in Sources */,
+				BA55A1792646C4BD00681DF5 /* PostDetailViewController.swift in Sources */,
 				BA55A15E2646ADC800681DF5 /* EventListViewController.swift in Sources */,
 				BA55A1642646AEF900681DF5 /* EventCollectionViewCell.swift in Sources */,
-				BA55A12D2645BA9D00681DF5 /* ViewController.swift in Sources */,
 				BA55A1292645BA9D00681DF5 /* AppDelegate.swift in Sources */,
 				BA55A1592646AC2700681DF5 /* MainTabBarController.swift in Sources */,
+				BA55A1702646BA5900681DF5 /* PostCollectionCell.swift in Sources */,
+				BA55A1822646E5B900681DF5 /* TagCollectionViewCell.swift in Sources */,
+				BA55A1852647E48F00681DF5 /* ProfileViewController.swift in Sources */,
 				BA55A12B2645BA9D00681DF5 /* SceneDelegate.swift in Sources */,
 				BA55A1612646ADE800681DF5 /* AppImage.swift in Sources */,
 			);
@@ -303,6 +419,7 @@
 		};
 		BA55A13A2645BA9F00681DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9082B92916F8B7D99670561D /* Pods-ict-hack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +439,7 @@
 		};
 		BA55A13B2645BA9F00681DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A34F46006CE6D4CA2523E86 /* Pods-ict-hack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

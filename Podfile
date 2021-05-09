@@ -4,7 +4,7 @@
 target 'ict-hack' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'appstore-card-transition'
+  pod 'MaterialComponents/Chips'
 
   # Pods for ict-hack
 
